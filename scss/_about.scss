@@ -1,0 +1,108 @@
+.about_area{
+    padding-top: 150px;
+    padding-bottom: 120px;
+    @media #{$mobile_device} {
+        padding-top: 50px;
+        padding-bottom: 20px;
+    }
+    @media #{$tablet_device} {
+        padding-top: 80px;
+        padding-bottom: 50px;
+    }
+    .about_thumb{
+        margin-bottom: 30px;
+    }
+    .about_info{
+        padding-left: 68px;
+        @media #{$mobile_device} {
+            padding-left: 0;
+        }
+        @media #{$tablet_device} {
+            padding-left: 0;
+        }
+        h3{
+            font-size: 50px;
+            font-weight: 600;
+            margin-bottom: 0;
+        }
+        p{
+            font-size: 16px;
+            line-height: 28px;
+            margin-top: 17px;
+            margin-bottom: 40px;
+        }
+        margin-bottom: 30px;
+    }
+}
+
+
+// contact_rsvp 
+.contact_rsvp{
+    padding: 184px 0;
+    background-image: url(../img/banner/contact.png);
+    background-repeat: no-repeat;
+    background-size:cover ;
+    position: relative;
+    z-index: 2;
+    @media #{$mobile_device}{
+        padding: 100px 0;
+    }
+    @media #{$tablet_device}{
+        padding: 100px 0;
+    }
+    &::before{
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        left: 0;
+        top: 0;
+        content: '';
+        z-index: -1;
+        /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#001d38+0,001d38+100&0.6+0,1+100 */
+        background: -moz-linear-gradient(top,  rgba(0,29,56,0.6) 0%, rgba(0,29,56,1) 100%); /* FF3.6-15 */
+        background: -webkit-linear-gradient(top,  rgba(0,29,56,0.6) 0%,rgba(0,29,56,1) 100%); /* Chrome10-25,Safari5.1-6 */
+        background: linear-gradient(to bottom,  rgba(0,29,56,0.6) 0%,rgba(0,29,56,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#99001d38', endColorstr='#001d38',GradientType=0 ); /* IE6-9 */
+
+    }
+    .text{
+        h3{
+            font-size: 50px;
+            font-weight: 600;
+            color: #fff;
+            margin-bottom: 15px;
+            @media #{$mobile_device}{
+                font-size: 30px;
+            }
+            @media #{$tablet_device}{
+                font-size: 30px;
+            }
+        }
+    }
+}
+
+// singer_video 
+.singer_video{
+    .image{
+        position: relative;
+        img{
+            width: 100%;
+        }
+        .video_btn{
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            @include transform(translate(-50%, -50%));
+            a{
+                width: 80px;
+                height: 80px;
+                background: #ED1B1B;
+                @include border-radius(50%);
+                text-align: center;
+                line-height: 80px;
+                color: #fff;
+                display: inline-block;
+            }
+        }
+    }
+}
