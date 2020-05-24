@@ -76,7 +76,7 @@ button {
 /* line 41, ../../Arafath/CL/Cl November/221. Music/HTML/scss/theme-default.scss */
 h1, h2, h3, h4, h5 {
   font-family: "Josefin Sans", sans-serif;
-  color: #001D38;
+  color: rgb(255, 255, 255);
 }
 
 /* line 45, ../../Arafath/CL/Cl November/221. Music/HTML/scss/theme-default.scss */
@@ -169,9 +169,8 @@ label {
 
 /* line 112, ../../Arafath/CL/Cl November/221. Music/HTML/scss/theme-default.scss */
 h3 {
-  font-size: 24px;
+  font-size: 18px;
 }
-
 /* line 116, ../../Arafath/CL/Cl November/221. Music/HTML/scss/theme-default.scss */
 .mb-65 {
   margin-bottom: 67px;
@@ -1271,7 +1270,7 @@ h3 {
 
 /* line 8, ../../Arafath/CL/Cl November/221. Music/HTML/scss/_slider.scss */
 .slider_area .single_slider {
-  height: 900px;
+  height: 700px;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
@@ -1288,7 +1287,7 @@ h3 {
 .slider_area .single_slider .slider_text h3 {
   color: #FFF;
   font-family: "Josefin Sans", sans-serif;
-  font-size: 120px;
+  font-size: 50px;
   text-transform: uppercase;
   font-weight: 600;
 }
