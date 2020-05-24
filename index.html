@@ -15,7 +15,7 @@
 			}
 			html, body { min-height: 100%; }
 			body.loading {
-				background: #1b1b1b url('img/load3.gif') no-repeat 50% 2%;
+				background: #1b1b1b url('img/load3.gif') no-repeat 50% 2%; 
 				-webkit-transition: background-color 0;
 				transition: background-color 0;
 				opacity: 0;
@@ -72,7 +72,7 @@
 			var removeLoading = function() {
 				setTimeout(function() {
 					body.className = body.className.replace(/loading/, '');
-				}, 3000);
+				}, 2500);
 			};
 			removeLoading();
     </script>
@@ -100,8 +100,6 @@
                                     <nav>
                                         <ul id="navigation">
                                             <li><a class="active" href="index.html">home</a></li>
-                                            <li><a href="about.html">About</a></li>
-                                            <li><a href="track.html">tracks</a></li>
                                             <li><a href="#">blog <i class="ti-angle-down"></i></a>
                                                 <ul class="submenu">
                                                     <li><a href="blog.html">blog</a></li>
@@ -113,6 +111,8 @@
                                                      <li><a href="elements.html">elements</a></li>
                                                 </ul>
                                             </li>
+                                            <li><a href="about.html">About</a></li>
+                                            <li><a href="track.html">Feedback</a></li>
                                             <li><a href="contact.html">Contact</a></li>
                                         </ul>
                                     </nav>
@@ -147,7 +147,19 @@
                     <div class="col-xl-12">
                         <div class="slider_text text-center ">
                             <h3>Covid-19 </h3>
-				<h4>Learn to Live with Corona !</h4>
+                            <h3>Learn to live with corona !</h3>
+                        </div>
+                        <br><br><br>
+                        <div class="col-xl-3 col-md-3">
+                            <div class="music_btn">
+                                    <a href="#" class="boxed-btn">Live Map</a>
+                            </div>
+                        </div>
+                        <br><br>
+                        <div class="col-xl-3 col-md-3">
+                            <div class="music_btn">
+                                    <a href="#" class="boxed-btn">Current Cases</a>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -156,40 +168,6 @@
     </div>
     <!-- slider_area_end -->
 
-    <!-- music_area  -->
-    <div class="music_area">
-        <div class="container">
-            <div class="row align-items-center justify-content-center">
-                <div class="col-xl-10">
-                    <div class="row align-items-center">
-                                <div class="col-xl-9 col-md-9">
-                                    <div class="music_field">
-                                            <div class="thumb">
-                                                    <img src="img/music_man/1.png" alt="">
-                                                </div>
-                                                <div class="audio_name">
-                                                    <div class="name">
-                                                        <h4>Frando Kally</h4>
-                                                        <p>10 November, 2019</p>
-                                                    </div>
-                                                        <audio preload="auto" controls>
-                                                                <source src="https://www.w3schools.com/html/horse.mp3">
-                                                            </audio>
-                                                </div>
-                                    </div>
-                                </div>
-                                <div class="col-xl-3 col-md-3">
-                                    <div class="music_btn">
-                                            <a href="#" class="boxed-btn">buy albam</a>
-                                    </div>
-                                </div>
-                    </div>
-                </div>
-
-            </div>
-        </div>
-    </div>
-    <!-- music_area end  -->
 
     <!-- about_area  -->
     <div class="about_area">
