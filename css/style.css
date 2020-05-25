@@ -3191,11 +3191,11 @@ h3 {
 @media (max-width: 767px) {
   /* line 13, ../../Arafath/CL/Cl November/221. Music/HTML/scss/_bradcam.scss */
   .bradcam_area {
-     padding: 120px 0;
+     /* padding: 120px 0;
      background-image:url(../img/banner/banner.jpg); 
     background-position:-20px 0px;
     background-size:cover;
-    padding-top:200px;
+    padding-top:200px; */
   }
 }
 
