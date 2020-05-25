@@ -76,7 +76,7 @@ button {
 /* line 41, ../../Arafath/CL/Cl November/221. Music/HTML/scss/theme-default.scss */
 h1, h2, h3, h4, h5 {
   font-family: "Josefin Sans", sans-serif;
-  color: #001D38;
+  color: rgb(255, 255, 255);
 }
 
 /* line 45, ../../Arafath/CL/Cl November/221. Music/HTML/scss/theme-default.scss */
@@ -169,9 +169,8 @@ label {
 
 /* line 112, ../../Arafath/CL/Cl November/221. Music/HTML/scss/theme-default.scss */
 h3 {
-  font-size: 24px;
+  font-size: 18px;
 }
-
 /* line 116, ../../Arafath/CL/Cl November/221. Music/HTML/scss/theme-default.scss */
 .mb-65 {
   margin-bottom: 67px;
@@ -301,12 +300,9 @@ h3 {
 
 /* line 217, ../../Arafath/CL/Cl November/221. Music/HTML/scss/theme-default.scss */
 .section-padding {
-  padding-top: 20px;
-  padding-bottom: 150px;
-
-  
+  padding-top: 120px;
+  padding-bottom: 120px;
 }
-
 
 /* line 221, ../../Arafath/CL/Cl November/221. Music/HTML/scss/theme-default.scss */
 .pt-120 {
@@ -898,16 +894,12 @@ h3 {
 /* line 40, ../../Arafath/CL/Cl November/221. Music/HTML/scss/_header.scss */
 .header-area .main-header-area .logo-img {
   text-align: center;
-  
 }
-
 
 @media (max-width: 767px) {
   /* line 40, ../../Arafath/CL/Cl November/221. Music/HTML/scss/_header.scss */
   .header-area .main-header-area .logo-img {
     text-align: left;
-    
-    
   }
 }
 
@@ -928,8 +920,7 @@ h3 {
 @media (max-width: 767px) {
   /* line 54, ../../Arafath/CL/Cl November/221. Music/HTML/scss/_header.scss */
   .header-area .main-header-area .logo-img img {
-    width: 700px;
-   
+    width: 70px;
   }
 }
 
@@ -1279,7 +1270,7 @@ h3 {
 
 /* line 8, ../../Arafath/CL/Cl November/221. Music/HTML/scss/_slider.scss */
 .slider_area .single_slider {
-  height: 900px;
+  height: 700px;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
@@ -1296,7 +1287,7 @@ h3 {
 .slider_area .single_slider .slider_text h3 {
   color: #FFF;
   font-family: "Josefin Sans", sans-serif;
-  font-size: 120px;
+  font-size: 50px;
   text-transform: uppercase;
   font-weight: 600;
 }
@@ -3147,19 +3138,12 @@ h3 {
 
 /* line 4, ../../Arafath/CL/Cl November/221. Music/HTML/scss/_bradcam.scss */
 .breadcam_bg_2 {
-  
   background-image: url(../img/banner/bradcam_2.jpg);
-  width:100%;
-  
-  
-  
-
 }
 
 /* line 7, ../../Arafath/CL/Cl November/221. Music/HTML/scss/_bradcam.scss */
 .breadcam_bg_3 {
   background-image: url(../img/banner/bradcam3.png);
-  
 }
 
 /* line 10, ../../Arafath/CL/Cl November/221. Music/HTML/scss/_bradcam.scss */
@@ -3169,14 +3153,10 @@ h3 {
 
 /* line 13, ../../Arafath/CL/Cl November/221. Music/HTML/scss/_bradcam.scss */
 .bradcam_area {
-  background-position:0px;
-  background-size:cover;
-  background-repeat: no-repeat; 
-  object-fit:cover;
-  
-  background-position: center;
+  background-size: cover;
+  background-position: center center;
   padding: 250px 0 178px 0;
-  height:650px;
+  background-repeat: no-repeat;
   position: relative;
   z-index: 0;
 }
@@ -3205,39 +3185,22 @@ h3 {
   /* line 13, ../../Arafath/CL/Cl November/221. Music/HTML/scss/_bradcam.scss */
   .bradcam_area {
     padding: 120px 0;
-    background-image:url(../img/banner/frontimage.jpeg);
-    background-position:-20px 0px;
-    background-size:cover;
-    padding-top:200px;
   }
 }
 
 /* line 39, ../../Arafath/CL/Cl November/221. Music/HTML/scss/_bradcam.scss */
 .bradcam_area h3 {
   font-size: 60px;
-  color: rgb(236, 230, 230);
-  border-width:0px;
-  padding-top:10px;
-  border: solid 1px rgb(170, 117, 101);
-
-  box-shadow: 1px 0px 13px 10px rgb(22, 15, 15);
-  font-weight:bold;
+  color: #fff;
+  font-weight: 400;
   margin-bottom: 0;
-  
   text-transform: uppercase;
 }
 
 @media (max-width: 767px) {
   /* line 39, ../../Arafath/CL/Cl November/221. Music/HTML/scss/_bradcam.scss */
   .bradcam_area h3 {
-    
-    padding-top:10px;
     font-size: 30px;
-    height:80px;
-    border-width:0px;
-    
-    
-    
   }
 }
 
@@ -5689,7 +5652,6 @@ h6 {
 /* line 5, ../../Arafath/CL/Cl November/221. Music/HTML/scss/_blog.scss */
 .latest-blog-area .area-heading {
   margin-bottom: 70px;
-  
 }
 
 /* line 10, ../../Arafath/CL/Cl November/221. Music/HTML/scss/_blog.scss */
@@ -6586,21 +6548,17 @@ h6 {
 .single-post-area .blog_details {
   box-shadow: none;
   padding: 0;
-  margin:0;
-  
 }
 
 /* line 1054, ../../Arafath/CL/Cl November/221. Music/HTML/scss/_blog.scss */
 .single-post-area .social-links {
-  padding-top: 0px;
-  
+  padding-top: 10px;
 }
 
 /* line 1057, ../../Arafath/CL/Cl November/221. Music/HTML/scss/_blog.scss */
 .single-post-area .social-links li {
   display: inline-block;
-  margin-bottom: 0px;
-  
+  margin-bottom: 10px;
 }
 
 /* line 1061, ../../Arafath/CL/Cl November/221. Music/HTML/scss/_blog.scss */
@@ -6614,7 +6572,6 @@ h6 {
 /* line 1074, ../../Arafath/CL/Cl November/221. Music/HTML/scss/_blog.scss */
 .single-post-area .blog_details {
   padding-top: 26px;
-  
 }
 
 /* line 1077, ../../Arafath/CL/Cl November/221. Music/HTML/scss/_blog.scss */
@@ -6631,7 +6588,7 @@ h6 {
   color: #888888;
   font-style: italic;
   margin-top: 25px;
-  margin-bottom: 30px;
+  margin-bottom: 25px;
 }
 
 @media (min-width: 768px) {
