@@ -772,7 +772,50 @@ var chart = new Chart(ctx, {
     }
 });
 </script>
+    <script>
+  console.log(parseInt(dailconf));
+  var a=parseInt(dailconf);
+  var b=parseInt(dailrec);
+  var c=parseInt(daildec);
+  
+  a=10;b=10;c=10;
+  var dataArray=[a,b,c];
+var ctx = document.getElementById("myappChart").getContext('2d');
+var myChart = new Chart(ctx, {
+  type: 'pie',
+  data: {
+    labels: ["Confirmed", "Recovered", "Deceased"],
+    datasets: [{
+      backgroundColor: [
+        "#17A2BB",
+        "#3498db",
+        "#FF6384"
+      ],
+      data:dataArray
+      // data: [parseInt(dailconf),parseInt(dailrec),parseInt(daildec)]
+    }]
+  }
+});
+</script>
+<script>
+  setTimeout(function(){ 
+    chart.update();
+    console.log("chart initialized");
+    a=parseInt(dailconf);
+    // a=100;
+    dataArray=[parseInt(dailconf),parseInt(dailrec),parseInt(daildec)];
+    myChart.data.datasets[0].data=[];
+    myChart.data.datasets[0].data=dataArray;
     
+    myChart.update();
+    // console.log(a) 
+    },
+    300
+    );
+
+  setInterval(function(){ chart.update();myChart.update();console.log("updated") }, 30000);
+
+</script>
     
  <script src="https://use.fontawesome.com/fcfefdb808.js"></script>
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
