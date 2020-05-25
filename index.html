@@ -7,27 +7,9 @@
     <title>Learn to live with coronavirus</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/chart.js@2.9.3/dist/Chart.min.js"></script>
     <script>!function (e, t, a) { var c = e.head || e.getElementsByTagName("head")[0], n = e.createElement("script"); n.async = !0, n.defer = !0, n.type = "text/javascript", n.src = t + "/static/js/chat_widget.js?config=" + JSON.stringify(a), c.appendChild(n) }(document, "https://app.engati.com", { bot_key: "7fb27d60946643ae", welcome_msg: true, branding_key: "default", server: "https://app.engati.com", e: "p" });</script>
    
-    <style>
-   
-   @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
-
-    body{
-          color:#3D5170;
-          font-family: 'Poppins', sans-serif;
-        }
-
-    .stats .curr_stat .row
-    {
-       height:10rem;
-    }
-</style>
-    
     
     <style type="text/css">
         
@@ -674,6 +656,128 @@
             });
         </script>
     
-</body>
+    
+    
+    
+    <script>
+    const dates = [];
+    const confirmed = [];
+    const recovered = [];
+    const deceased  = [];
+    var dailrec=0;
+    var dailconf=0;
+    var daildec=0;
+    var ctx = document.getElementById('myChart').getContext('2d');
+    var rec=document.getElementById('rec');
+    var rec_plus=document.getElementById('rec-plus');
+    var act=document.getElementById('act');
+    var act_plus=document.getElementById('act-plus');
+    var dec=document.getElementById('dec');
+    var dec_plus=document.getElementById('dec-plus');
+    var conf=document.getElementById('conf');
+    var conf_plus=document.getElementById('conf-plus');
+      
+    const url = 'https://api.covid19india.org/data.json';
+    async function getInfo(){
+        const response = await fetch(url);
+        const data = await response.json();
+        const series_data = data.cases_time_series;
+        const len_data = series_data.length
+        for(var i=len_data-31;i<len_data;i++){
+            const date = series_data[i].date;
+            const confirm = series_data[i].dailyconfirmed;
+            const recover = series_data[i].dailyrecovered;
+            const death = series_data[i].dailydeceased;
+            dates.push(date);
+            confirmed.push(parseInt(confirm));
+            recovered.push(parseInt(recover));
+            deceased.push(parseInt(death));
+        }
+      var l=len_data-1;
+
+    rec.innerHTML=series_data[l].totalrecovered;
+    rec_plus.innerHTML="+"+series_data[l].dailyrecovered;
+    
+     conf.innerHTML=series_data[l].totalconfirmed;
+     conf_plus.innerHTML="+"+series_data[l].dailyconfirmed;
+    
+     dec.innerHTML=series_data[l].totaldeceased;
+     dec_plus.innerHTML="+"+series_data[l].dailydeceased;
+    
+     act.innerHTML=parseInt(series_data[l].totalconfirmed)-parseInt(series_data[l].totalrecovered);
+     act_plus.innerHTML="+"+parseInt(series_data[l].dailyconfirmed)-parseInt(series_data[l].dailyrecovered);
+     act_plus.innerHTML="+"+act_plus.innerHTML;
+
+     dailrec=series_data[l].dailyrecovered;
+      dailconf=series_data[l].dailyconfirmed;
+     daildec=series_data[l].dailydeceased;
+     
+
+    }
+    getInfo();
+   
+    console.log(confirmed);
+    console.log(dates);
+
+
+var chart = new Chart(ctx, {
+    type: 'line',
+
+    data: 
+    {
+        labels: dates,
+        datasets: [{
+            label: 'Confirmed',
+            backgroundColor: 'rgba(75,192,192,0.2)',
+            borderColor: 'rgba(75,192, 192, 0.2)',
+            data: confirmed
+        },
+        {
+            label: 'Recovered',
+            backgroundColor: 'rgba(54, 162, 235, 0.2)',
+            borderColor: 'rgba(54, 162, 235, 0.2)',
+            data: recovered
+        },
+        {
+            label: 'Deceased',
+            backgroundColor:'rgba(255, 99, 132, 0.2)',
+            borderColor: 'rgba(255, 99, 132, 0.2)',
+            data: deceased
+        }
+      ]
+    },
+
+    // Configuration options go here
+     options: {
+            responsive: true,
+            // maintainAspectRatio: true,
+
+           scales: {
+      xAxes: [{
+        gridLines: {
+          display: false,
+          drawBorder: false
+        }
+      }],
+      yAxes: [{
+        gridLines: {
+          color: "rgb(234, 236, 244)",
+          zeroLineColor: "rgb(234, 236, 244)",
+          drawBorder: false,
+          borderDash: [2],
+          zeroLineBorderDash: [2]
+        }
+      }]
+    }
+    }
+});
+</script>
+    
+    
+ <script src="https://use.fontawesome.com/fcfefdb808.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+  </body>
 
 </html>
