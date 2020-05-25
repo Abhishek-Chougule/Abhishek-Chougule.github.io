@@ -3153,10 +3153,14 @@ h3 {
 
 /* line 13, ../../Arafath/CL/Cl November/221. Music/HTML/scss/_bradcam.scss */
 .bradcam_area {
-  background-size: cover;
-  background-position: center center;
+ background-position:0px;
+  background-size:cover;
+  background-repeat: no-repeat; 
+  object-fit:cover;
+  
+  background-position: center;
   padding: 250px 0 178px 0;
-  background-repeat: no-repeat;
+  height:650px;
   position: relative;
   z-index: 0;
 }
@@ -3184,23 +3188,38 @@ h3 {
 @media (max-width: 767px) {
   /* line 13, ../../Arafath/CL/Cl November/221. Music/HTML/scss/_bradcam.scss */
   .bradcam_area {
-    padding: 120px 0;
+     padding: 120px 0;
+    background-image:url(../img/banner/frontimage.jpeg);
+    background-position:-20px 0px;
+    background-size:cover;
+    padding-top:200px;
   }
 }
 
 /* line 39, ../../Arafath/CL/Cl November/221. Music/HTML/scss/_bradcam.scss */
 .bradcam_area h3 {
-  font-size: 60px;
-  color: #fff;
-  font-weight: 400;
+   font-size: 60px;
+  color: rgb(236, 230, 230);
+  border-width:0px;
+  padding-top:10px;
+  border: solid 1px rgb(170, 117, 101);
+
+  box-shadow: 1px 0px 13px 10px rgb(22, 15, 15);
+  font-weight:bold;
   margin-bottom: 0;
+  
   text-transform: uppercase;
 }
 
 @media (max-width: 767px) {
   /* line 39, ../../Arafath/CL/Cl November/221. Music/HTML/scss/_bradcam.scss */
   .bradcam_area h3 {
+    padding-top:10px;
     font-size: 30px;
+    height:80px;
+    border-width:0px;
+    
+    
   }
 }
 
