@@ -56,7 +56,7 @@
                                             <li><a href="single-blog.html">Blog</a></li>
                                             <li><a href="news.html">News</a></li>
                                             <li><a href="blog.html">Guidelines</a></li>
-                                            
+
                                             <li><a class="active" href="about.html">About</a></li>
                                             <li><a href="track.html">tracks</a></li>
                                             <li><a href="element.html">Feedback</a></li>
@@ -102,87 +102,89 @@
 
     <style>
         ::-webkit-scrollbar {
-          width: 10px;
+            width: 10px;
         }
-        
+
         ::-webkit-scrollbar-track {
-          box-shadow: inset 0 0 5px grey; 
-          border-radius: 10px;
+            box-shadow: inset 0 0 5px grey;
+            border-radius: 10px;
         }
-         
+
         ::-webkit-scrollbar-thumb {
-          background: RoyalBlue; 
-          border-radius: 10px;
+            background: RoyalBlue;
+            border-radius: 10px;
         }
-        
+
         ::-webkit-scrollbar-thumb:hover {
-          background: #1e90ff; 
+            background: #1e90ff;
         }
-        </style>
+    </style>
 
     <style>
         body {
             background-color: rgb(27, 26, 26);
-          font-family: Arial, Helvetica, sans-serif;
+            font-family: Arial, Helvetica, sans-serif;
         }
-        
-        .flip-box {
-          background-color: transparent;
-          width: 300px;
-          height: 200px;
-         
-          perspective: 1000px;
-        }
-        
-        .flip-box-inner {
-          position: relative;
-          width: 100%;
-          height: 100%;
-          text-align: center;
-          transition: transform 0.8s;
-          transform-style: preserve-3d;
-        }
-        
-        .flip-box:hover .flip-box-inner {
-          transform: rotateX(180deg);
-        }
-        
-        .flip-box-front, .flip-box-back {
-          position: absolute;
-          width: 100%;
-          height: 100%;
-          backface-visibility: hidden;
-        }
-        
-        .flip-box-front {
-         background: transparent;
-         color: rgb(255, 255, 255);
-        }
-        
-        .flip-box-back {
-          background-color: transparent;
-          color: rgb(255, 255, 255);
-          transform: rotateX(180deg);
-        }
-        img {
-          border-radius: 50%;
-        }
-        </style>
 
-<center>
+        .flip-box {
+            background-color: transparent;
+            width: 300px;
+            height: 200px;
+
+            perspective: 1000px;
+        }
+
+        .flip-box-inner {
+            position: relative;
+            width: 100%;
+            height: 100%;
+            text-align: center;
+            transition: transform 0.8s;
+            transform-style: preserve-3d;
+        }
+
+        .flip-box:hover .flip-box-inner {
+            transform: rotateX(180deg);
+        }
+
+        .flip-box-front,
+        .flip-box-back {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            backface-visibility: hidden;
+        }
+
+        .flip-box-front {
+            background: transparent;
+            color: rgb(255, 255, 255);
+        }
+
+        .flip-box-back {
+            background-color: transparent;
+            color: rgb(255, 255, 255);
+            transform: rotateX(180deg);
+        }
+
+        img {
+            border-radius: 50%;
+        }
+    </style>
+
+    <center>
+        <br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+        <div class="flip-box">
+            <div class="flip-box-inner">
+                <div class="flip-box-front">
+                    <img src="image.png" width="200" height="200"><span>About Us</span>
+                </div>
+                <div class="flip-box-back">
+                    <h3>&copy Abhishek Chougule <br><br> Ayush Verma <br><br> Anshul Garg <br><br> Shreyas Raorane</h3>
+                </div>
+            </div>
+        </div>
+    </center>
     <br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-<div class="flip-box">
-<div class="flip-box-inner">
-<div class="flip-box-front">
-  <img src="image.png" width="200" height="200"><span>About Us</span>
-</div>
-<div class="flip-box-back">
- <h3>&copy Abhishek Chougule <br><br> Ayush Verma <br><br> Anshul Garg <br><br> Shreyas Raorane</h3>
-</div>
-</div>
-</div>
-</center>
-<br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 
     <!-- contact_rsvp -->
     <div class="contact_rsvp">
@@ -199,37 +201,56 @@
     </div>
     <!--/ contact_rsvp -->
 
+    <!-- contact_rsvp -->
+    <div class="contact_rsvp">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-12">
+                    <div class="text text-center">
+                        <h3><a href="https://www.cdc.gov/coronavirus/2019-ncov/if-you-are-sick/steps-when-sick.html"
+                                target="_blank">Feeling Sick?</a></h3>
+                        <a class="boxed-btn3" href="tel:+919888371790">Contact Doctor</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--/ contact_rsvp -->
+
     <!-- footer start -->
     <footer class="footer">
         <div class="footer_top">
             <div class="container">
                 <div class="row">
                     <div class="col-xl-6 col-md-6">
-                            <div class="footer_widget">
-                                    <h3 class="footer_title">
-                                            Services
-                                    </h3>
-                                <div class="subscribe-from">
-                                        <form action="#">
-                                                <input type="text" placeholder="Enter your mail">
-                                                <button type="submit" >Subscribe</button>
-                                            </form>
-                                </div>
-                                <p class="sub_text">Esteem spirit temper too say adieus who direct esteem esteems luckily.</p>
-                                </div>
+                        <div class="footer_widget">
+                            <h3 class="footer_title">
+                                For More
+                            </h3>
+                            <div class="subscribe-from">
+                                <form action="#">
+                                    <input type="text" placeholder="Enter your mail">
+                                    <button type="submit">Subscribe</button>
+                                </form>
+                            </div>
+                            <p class="sub_text">The best of our work comes out when you are pushed to the wall. The
+                                world is pushed to the wall right now.
+                            </p>
+                        </div>
                     </div>
                     <div class="col-xl-5 col-md-5 offset-xl-1">
                         <div class="footer_widget">
-                                <h3 class="footer_title">
-                                        Contact Me
-                                </h3>
-                            <ul>
-                                <li><a href="#">conbusi@support.com
+                            <h3 class="footer_title">
+                                Contact Us
+                            </h3>
+                            <h4>
+                                <li><a href="mailto:covid007@mailinator.com">covid007@mailinator.com
                                     </a></li>
-                                <li><a href="#">+10 873 672 6782
+                                <br>
+                                <li><a href="https://covid19.who.int/" target="_blank">Its EveryWhere
                                     </a></li>
-                                <li><a href="#">600/D, Green road, Kings Garden NewYork-6732</a></li>
-                            </ul>
+                                </ul>
+                            </h4>
                             <div class="socail_links">
                                 <ul>
                                     <li>
@@ -271,19 +292,20 @@
                 <div class="row">
                     <div class="col-xl-7 col-md-6">
                         <p class="copy_right">
-                            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
-<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                            Copyright &copy;
+                            <script>document.write(new Date().getFullYear());</script> All rights reserved made with
+                            Covid <i class="fa fa-heart-o" aria-hidden="true"></i>
+                            <!-- by <a href="https://github.com/LHolmes0" target="_blank">LHolmes</a> -->
                         </p>
                     </div>
                     <div class="col-xl-5 col-md-6">
                         <div class="footer_links">
                             <ul>
-                                <li><a href="#">home</a></li>
-                                <li><a href="#">about</a></li>
-                                <li><a href="#">tracks</a></li>
-                                <li><a href="#">blog</a></li>
-                                <li><a href="#">contact</a></li>
+                                <li><a href="index.html">home</a></li>
+                                <li><a href="about.html">about</a></li>
+                                <li><a href="track.html">tracks</a></li>
+                                <li><a href="blog.html">blog</a></li>
+                                <li><a href="contact.html">contact</a></li>
                             </ul>
                         </div>
                     </div>
@@ -296,10 +318,9 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
     <!-- link that opens popup -->
 
     <!-- JS here -->
-        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" 
-            integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" 
-            crossorigin="anonymous">
-    </script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+        </script>
     <script src="js/vendor/modernizr-3.5.0.min.js"></script>
     <script src="js/vendor/jquery-1.12.4.min.js"></script>
     <script src="js/popper.min.js"></script>
@@ -328,14 +349,14 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
     <script src="js/mail-script.js"></script>
 
     <script src="js/main.js"></script>
-    
-		<script>
-                $(function() {
-                    $('audio').audioPlayer({
 
-                    });
-                });
-            </script>
+    <script>
+        $(function () {
+            $('audio').audioPlayer({
+
+            });
+        });
+    </script>
 </body>
 
 </html>
