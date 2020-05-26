@@ -6190,7 +6190,7 @@ h6 {
   margin-bottom: 30px;
   color:black;
   font-family: 'Source Sans Pro', sans-serif;
-  font-size:38px;
+ 
 
 }
 
@@ -6208,11 +6208,11 @@ h6 {
 .blog_details h2 {
   
   font-size: 28px;
-  font-weight: 350;
+  font-weight:350;
   margin-bottom: 20px;
-  color:black;
+  color:rgb(2, 2, 2);
   
-  
+  text-transform:uppercase;
 }
 
 
