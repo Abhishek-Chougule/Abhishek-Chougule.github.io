@@ -6188,6 +6188,10 @@ h6 {
 /* line 537, ../../Arafath/CL/Cl November/221. Music/HTML/scss/_blog.scss */
 .blog_details p {
   margin-bottom: 30px;
+  color:black;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size:38px;
+
 }
 
 /* line 541, ../../Arafath/CL/Cl November/221. Music/HTML/scss/_blog.scss */
@@ -6202,11 +6206,15 @@ h6 {
 
 /* line 549, ../../Arafath/CL/Cl November/221. Music/HTML/scss/_blog.scss */
 .blog_details h2 {
-  font-size: 18px;
+  
+  font-size: 28px;
   font-weight: 600;
-  margin-bottom: 8px;
-  color:black;
+  margin-bottom: 20px;
+  color:rgb(158, 37, 63);
+  text-decoration:underline;
+  text-transform:uppercase;
 }
+
 
 @media (min-width: 768px) {
   /* line 549, ../../Arafath/CL/Cl November/221. Music/HTML/scss/_blog.scss */
@@ -6214,6 +6222,9 @@ h6 {
     font-size: 24px;
     margin-bottom: 15px;
   }
+}
+.blog_details h2:hover,:focus{
+  color:black;
 }
 
 /* line 563, ../../Arafath/CL/Cl November/221. Music/HTML/scss/_blog.scss */
@@ -6537,6 +6548,7 @@ h6 {
   position: relative;
   display: block;
   padding: 0;
+
   text-align: center;
   margin-left: -1px;
   line-height: 45px;
@@ -6571,6 +6583,7 @@ h6 {
 .single-post-area .blog_details {
   box-shadow: none;
   padding: 0;
+  
 }
 
 /* line 1054, ../../Arafath/CL/Cl November/221. Music/HTML/scss/_blog.scss */
@@ -6599,39 +6612,46 @@ h6 {
 
 /* line 1077, ../../Arafath/CL/Cl November/221. Music/HTML/scss/_blog.scss */
 .single-post-area .blog_details p {
-  margin-bottom: 20px;
+  margin-bottom: 0px;
   font-size: 15px;
 }
 
 /* line 1087, ../../Arafath/CL/Cl November/221. Music/HTML/scss/_blog.scss */
 .single-post-area .quote-wrapper {
   background: rgba(130, 139, 178, 0.1);
-  padding: 15px;
+  padding-left: 0px;
+  box-shadow:1px 3px 3px 3px rgb(7, 7, 7);
   line-height: 1.733;
-  color: #888888;
-  font-style: italic;
+  
+  
   margin-top: 25px;
+
   margin-bottom: 25px;
 }
 
 @media (min-width: 768px) {
   /* line 1087, ../../Arafath/CL/Cl November/221. Music/HTML/scss/_blog.scss */
   .single-post-area .quote-wrapper {
-    padding: 30px;
+    padding-left: 0px;
+    background:rgb(44, 1, 65);
   }
 }
 
 /* line 1101, ../../Arafath/CL/Cl November/221. Music/HTML/scss/_blog.scss */
 .single-post-area .quotes {
-  background: #fff;
+  background:rgb(148, 30, 55);
+
+  color:rgb(48, 15, 15);
+
   padding: 15px 15px 15px 20px;
-  border-left: 2px solid;
-}
+  
+  }
 
 @media (min-width: 768px) {
   /* line 1101, ../../Arafath/CL/Cl November/221. Music/HTML/scss/_blog.scss */
   .single-post-area .quotes {
     padding: 25px 25px 25px 30px;
+    
   }
 }
 
