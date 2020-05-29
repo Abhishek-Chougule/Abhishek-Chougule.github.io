@@ -1,5 +1,5 @@
 body{
-  background: rgba(218,218,218,1)
+  background: rgba(0,0,0)
 }
 
 a{
@@ -60,7 +60,7 @@ a{
 }
 
 .developer{
-   background-color: aliceblue;
+   background-color: black;
   width: 300px;
   height: 400px;
   object-fit: cover;
@@ -76,7 +76,7 @@ a{
   
 }
 .developer1{
-  background-color: aliceblue;
+  background-color: black;
   width: 300px;
   height: 400px;
   object-fit: cover;
@@ -92,7 +92,7 @@ a{
   
 }
 .developer2{
-  background-color: aliceblue;
+  background-color: black;
   width: 300px;
   height: 400px;
   object-fit: cover;
