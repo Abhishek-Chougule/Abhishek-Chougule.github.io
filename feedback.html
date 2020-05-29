@@ -1,3 +1,4 @@
+<!doctype html>
 <html class="no-js" lang="zxx">
 
 <head>
@@ -23,8 +24,7 @@
     <link rel="stylesheet" href="css/nice-select.css">
     <link rel="stylesheet" href="css/flaticon.css">
     <link rel="stylesheet" href="css/gijgo.css">
-    <link rel="stylesheet" href="css/animate.min.css">
-    <link rel="stylesheet" href="css/slick.css">
+    <link rel="stylesheet" href="css/animate.css">
     <link rel="stylesheet" href="css/slicknav.css">
     <link rel="stylesheet" href="css/style.css">
     <!-- <link rel="stylesheet" href="css/responsive.css"> -->
@@ -44,7 +44,7 @@
         }
 
         ::-webkit-scrollbar-thumb:hover {
-            background: # 1e90ff;
+            background: #1e90ff;
         }
     </style>
 </head>
@@ -53,7 +53,6 @@
     <!--[if lte IE 9]>
             <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
         <![endif]-->
-
 
     <!-- header-start -->
     <header>
@@ -76,10 +75,10 @@
                                             <li><a href="index.html">home</a></li>
                                             <li><a href="single-blog.html">Blog</a></li>
                                             <li><a href="news.html">News</a></li>
-                                            <li><a href="blog.html">Guidelines</a></li>
+                                            <li><a class="active" href="#">Guidelines</a></li>
                                             <li><a href="track.html">UpSkill</a></li>
                                             <li><a href="myth.html">Myths</a></li>
-                                            <li><a class="active" href="#">Feedback</a></li>
+                                            <li><a href="feedback.html">Feedback</a></li>
                                             <li><a href="about.html">About</a></li>
                                         </ul>
                                     </nav>
@@ -90,8 +89,8 @@
                                     <ul>
                                         <li><a href="#"> <i class="fa fa-facebook"></i> </a></li>
                                         <li><a href="#"> <i class="fa fa-twitter"></i> </a></li>
-                                        <li><a href="https://www.instagram.com/l_holm3s/" target="_blank"> <i
-                                                    class="fa fa-instagram"></i> </a></li>
+                                        <li><a href="https://www.instagram.com/ayuush_verma/" target="_blank">
+                                                <i class="fa fa-instagram"></i></a></li>
                                     </ul>
                                 </div>
                             </div>
@@ -113,23 +112,22 @@
             <div class="row">
                 <div class="col-xl-12">
                     <div class="bradcam_text text-center">
-                        <h3>feedback</h3>
+                        <h3>Covid-19 Guidelines</h3>
                     </div>
                     <div class="arrow bounce">
-                        <a href="#yes" class="fa fa-arrow-down fa-3x"></a>
+                        <a href="#yes3" class="fa fa-arrow-down fa-3x"></a>
                     </div>
                 </div>
             </div>
         </div>
     </div>
     <!--/ bradcam_area  -->
-    <br>
-
-
+    
     <iframe
         src="https://docs.google.com/forms/d/e/1FAIpQLSe4PpY4kp4W3fPmpnWx8QaRdclzJauMoji2yUu50m0On0iXRA/viewform?embedded=true"
         width="100%" height="100%" frameborder="0" marginheight="0" marginwidth="0" id="yes">Loading…</iframe>
 
+    <!-- contact_rsvp -->
     <div class="contact_rsvp">
         <div class="container">
             <div class="row">
@@ -205,7 +203,7 @@
                                         </a>
                                     </li>
                                     <li>
-                                        <a href="https://www.instagram.com/l_holm3s/" target="_blank">
+                                        <a href="https://www.instagram.com/ayuush_verma/" target="_blank">
                                             <i class="fa fa-instagram"></i>
                                         </a>
                                     </li>
@@ -226,7 +224,7 @@
                             Copyright &copy;
                             <script>document.write(new Date().getFullYear());</script> All rights reserved made with
                             Covid <i class="fa fa-heart-o" aria-hidden="true"></i>
-
+                            <!-- by <a href="https://github.com/LHolmes0" target="_blank">LHolmes</a> -->
                         </p>
                     </div>
                     <div class="col-xl-5 col-md-6">
@@ -245,13 +243,7 @@
         </div>
     </footer>
     <!--/ footer end  -->
-
-    <!-- link that opens popup -->
-
     <!-- JS here -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
-        </script>
     <script src="js/vendor/modernizr-3.5.0.min.js"></script>
     <script src="js/vendor/jquery-1.12.4.min.js"></script>
     <script src="js/popper.min.js"></script>
@@ -262,7 +254,6 @@
     <script src="js/waypoints.min.js"></script>
     <script src="js/jquery.counterup.min.js"></script>
     <script src="js/imagesloaded.pkgd.min.js"></script>
-    <script src="js/audioplayer.js"></script>
     <script src="js/scrollIt.js"></script>
     <script src="js/jquery.scrollUp.min.js"></script>
     <script src="js/wow.min.js"></script>
@@ -271,7 +262,7 @@
     <script src="js/jquery.magnific-popup.min.js"></script>
     <script src="js/plugins.js"></script>
     <script src="js/gijgo.min.js"></script>
-    <script src="js/slick.min.js"></script>
+
     <!--contact js-->
     <script src="js/contact.js"></script>
     <script src="js/jquery.ajaxchimp.min.js"></script>
@@ -280,12 +271,19 @@
     <script src="js/mail-script.js"></script>
 
     <script src="js/main.js"></script>
-
     <script>
-        $(function () {
-            $('audio').audioPlayer({
+        $('#datepicker').datepicker({
+            iconsLibrary: 'fontawesome',
+            icons: {
+                rightIcon: '<span class="fa fa-caret-down"></span>'
+            }
+        });
+        $('#datepicker2').datepicker({
+            iconsLibrary: 'fontawesome',
+            icons: {
+                rightIcon: '<span class="fa fa-caret-down"></span>'
+            }
 
-            });
         });
     </script>
 </body>
