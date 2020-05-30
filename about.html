@@ -6,9 +6,7 @@
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <title>About</title>
     <meta name="description" content="">
-    <link href="style.css" rel="stylesheet" type="text/css">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
 
     <script>!function (e, t, a) { var c = e.head || e.getElementsByTagName("head")[0], n = e.createElement("script"); n.async = !0, n.defer = !0, n.type = "text/javascript", n.src = t + "/static/js/chat_widget.js?config=" + JSON.stringify(a), c.appendChild(n) }(document, "https://app.engati.com", { bot_key: "7fb27d60946643ae", welcome_msg: true, branding_key: "default", server: "https://app.engati.com", e: "p" });</script>
 
@@ -19,7 +17,6 @@
 
     <!-- CSS here -->
     <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="css/owl.carousel.min.css">
     <link rel="stylesheet" href="css/magnific-popup.css">
     <link rel="stylesheet" href="css/font-awesome.min.css">
@@ -110,75 +107,7 @@
         </div>
     </div>
     <!--/ bradcam_area  -->
-    
-    
-    <br><br><br><br><br>
-    <section class="blog_area section-padding" id="yes">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-8 mb-5 mb-lg-0">
-     <div class="developer">
-  <a href="https://www.linkedin.com/in/abhishek-chougule-bb74701a0" class="photo">
-      <img src="Abhi.jpg" />
-      <h4>Abhishek Chougule</h4>
-      <h5>Head Chef & Developer</h5>
-    <div class="glow-wrap">
-      <i class="glow"></i>
-    </div>
-  </a>
-</div>
-                    
-                    
-                     </div>
-            </div>
-        </div>
-    </section>
-                    
-           <br><br><br><br><br><br><br>         
-<section class="blog_area section-padding" id="yes">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-8 mb-5 mb-lg-0">
-                    
-<div class="developer1">
-  <a href="https://www.linkedin.com/in/ayushimpulse/" class="photo">
-    <img src="Ayush.jpg" />
-    <h4>Ayush Verma</h4>
-    <h5>Developer</h5>
-  <div class="glow-wrap">
-    <i class="glow"></i>
-  </div>
-</a>
-</div>
-             
-                    
- </div>
-            </div>
-        </div>
-    </section>
-                    
-                    <br><br><br><br><br><br><br>
-                    <section class="blog_area section-padding" id="yes">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-8 mb-5 mb-lg-0">
-<div class="developer2">
-  <a href="https://www.linkedin.com/in/lholmes12/" class="photo">
-    <img src="Anshul.jpg" />
-    <h4>Anshul Garg</h4>
-    <h5>Developer</h5>
-  <div class="glow-wrap">
-    <i class="glow"></i>
-  </div>
-</a>
-</div>
-                </div>
-            </div>
-        </div>
-    </section>
-                    
-    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-    
+
     <style>
         ::-webkit-scrollbar {
             width: 10px;
@@ -199,6 +128,76 @@
         }
     </style>
 
+    <style>
+        body {
+            background-color: rgb(27, 26, 26);
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .flip-box {
+            background-color: transparent;
+            width: 300px;
+            height: 200px;
+
+            perspective: 1000px;
+        }
+
+        .flip-box-inner {
+            position: relative;
+            width: 100%;
+            height: 100%;
+            text-align: center;
+            transition: transform 0.8s;
+            transform-style: preserve-3d;
+        }
+
+        .flip-box:hover .flip-box-inner {
+            transform: rotateX(180deg);
+        }
+
+        .flip-box-front,
+        .flip-box-back {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            backface-visibility: hidden;
+        }
+
+        .flip-box-front {
+            background: transparent;
+            color: rgb(255, 255, 255);
+        }
+
+        .flip-box-back {
+            background-color: transparent;
+            color: rgb(255, 255, 255);
+            transform: rotateX(180deg);
+        }
+
+        img {
+            border-radius: 50%;
+        }
+    </style>
+
+    <center>
+        <br><br><br><br><br><br><br><br><br id="yes"><br><br><br><br><br>
+        <div class="flip-box">
+            <div class="flip-box-inner">
+                <div class="flip-box-front">
+                    <img src="image.png" width="200" height="200"><span>About Us</span>
+                </div>
+                <div class="flip-box-back">
+                    <h3>&copy <a href="https://www.linkedin.com/in/abhishek-chougule-bb74701a0" target="_blank">
+                            Abhishek Chougule</a> <br><br> <a href="https://www.linkedin.com/in/ayushimpulse/"
+                            target="_blank"> Ayush Verma </a><br><br> <a href="https://www.linkedin.com/in/lholmes12/"
+                            target="_blank"> Anshul Garg</a> <br><br> <a
+                            href="https://www.linkedin.com/in/shreyas-raorane-85aa9116a" target="_blank">Shreyas
+                            Raorane</a></h3>
+                </div>
+            </div>
+        </div>
+    </center>
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 
 
     <div class="contact_rsvp">
