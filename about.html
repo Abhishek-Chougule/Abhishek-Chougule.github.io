@@ -175,13 +175,165 @@
         }
 
         img {
-            border-radius: 50%;
+            border-radius: 50%;}
+
+                
+
+        .founders{
+
+        /* background-image: linear-gradient(rgb(143, 137, 55),rgb(128, 173, 159)); */
+        padding-top:20px;
+        padding-bottom:5px;
+        margin-right:30px;
+        margin-left:0px;
+        width:80%;
+
         }
+
+        .flip-card {
+        text-align: center;
+        background-color:transparent;
+        width: 100%;
+        height: 200px;
+        perspective: 1000px;
+        display:inline-block;
+        
+        margin-bottom:6%;
+        color:black;
+        }
+
+        .flip-card-inner {
+
+        position: relative;
+        width: 100%;
+        height: 100%;
+        text-align: center;
+        transition: transform 0.4s ease-out;
+        transform-style: preserve-3d;
+       
+        
+        color:black;
+
+        }
+
+        .flip-card:hover .flip-card-inner {
+        transform: rotateY(180deg);
+        }
+
+        .flip-card-front, .flip-card-back {
+
+        position: absolute;
+      
+        width: 100%;
+        height: 100%;
+        
+        padding-bottom:40%;
+        -webkit-backface-visibility: hidden;
+        backface-visibility: hidden;
+        
+        color:black;
+
+        }
+
+        #heading_card{
+        padding-top:20px;
+        top:20px;
+        left:200px;
+        padding-bottom:70px;
+        color:white;
+        font-size:20px;
+        letter-spacing: 10px;
+        
+        font-weight:bolder;
+        font-family: 'Roboto', sans-serif;  
+
+        }
+
+
+        .flip-card-back {
+        
+       
+        background:linear-gradient(rgb(59, 57, 57),rgb(252, 250, 250));
+        /* box-shadow:1px 1px 2px 6px rgb(146, 121, 121); */
+        font-family: 'Roboto', sans-serif;
+        transform: rotateY(180deg);
+        padding-bottom:70px;
+        color: rgb(0, 0, 0);
+        
+        
+        }
+
+        
     </style>
 
-    <center>
-        <br><br><br><br><br><br><br><br><br id="yes"><br><br><br><br><br>
-        <div class="flip-box">
+    <center id="yes" style="position:relative;">
+    
+        <!--cards-->
+           <div id="heading_card">Creators</div>
+<div class="founders" id="founders">
+
+ 
+
+    <div class="flip-card">
+        <div class="flip-card-inner">
+               <div class="flip-card-front"><img id="akash" src="Abhi.jpg" style=" border-radius:50%; width:200px; height:200px;  " alt="product1"></div>
+                       <div class="flip-card-back"><br>
+                           <h3 style="color:black;"><br><br><a href="https://www.linkedin.com/in/abhishek-chougule-bb74701a0" target="_blank">Abhishek Chougule</a></h3>
+                           <p style="text-align:center;color:black;"><br>Head Chef and developer</p>
+                           
+                       </div>
+        </div>
+        <hr style="background-color:white;">
+       </div>
+       
+    <div class="flip-card">
+        
+      <div class="flip-card-inner">
+            <div class="flip-card-front"><img id="ayush" src="ayush.jpeg" style=" border-radius:50%; width:200px; height:200px; "  alt="product1"></div>
+                    <div class="flip-card-back">
+                        <br>
+                        <h3 style="color:black;"><br><br><a href="https://www.linkedin.com/in/ayushimpulse/"
+                            target="_blank"> Ayush Verma </a></h3>
+                        <p style="text-align:center;color:black;"><br>Developer</p>
+                       
+    
+                    
+                    </div>
+            </div>
+            <hr style="background-color:white;">
+       </div>
+    
+       
+    
+    <div class="flip-card">
+     <div class="flip-card-inner">
+        <div class="flip-card-front"><img id="banner" src="Anshul.jpg" style="  border-radius:50%; width:200px; height:200px;  "  alt="product1"></div>
+                    <div class="flip-card-back"><br>
+                        <h3 style="color:black;"><br><br><a href="https://www.linkedin.com/in/lholmes12/"
+                            target="_blank"> Anshul Garg</a></h3>
+                        <p style="text-align:center; color:black;"><br>Developer</p>
+                         
+                    </div>
+                </div>
+                <hr style="background-color:white;">
+    </div>
+ 
+    <div class="flip-card">
+        <div class="flip-card-inner">
+               <div class="flip-card-front"><img id="akash" src="shyreyas.jpeg" style=" border-radius:50%; width:200px; height:200px;  " alt="product1"></div>
+                       <div class="flip-card-back"><br>
+                           <h3 style="color:black;"><br><br><a href="https://www.linkedin.com/in/shreyas-raorane-85aa9116a" target="_blank">Shreyas
+                            Raorane</a></h3>
+                           <p style="text-align:center; color:black;"><br>Developer</p>
+                        
+                       </div>
+        </div>
+       </div>
+    
+    </div>
+    
+    
+        <!-- <div class="flip-box">
             <div class="flip-box-inner">
                 <div class="flip-box-front">
                     <img src="image.png" width="200" height="200"><span>About Us</span>
@@ -189,8 +341,7 @@
                 <div class="flip-box-back">
                     <h3>&copy <a href="https://www.linkedin.com/in/abhishek-chougule-bb74701a0" target="_blank">
                             Abhishek Chougule</a> <br><br> <a href="https://www.linkedin.com/in/ayushimpulse/"
-                            target="_blank"> Ayush Verma </a><br><br> <a href="https://www.linkedin.com/in/lholmes12/"
-                            target="_blank"> Anshul Garg</a> <br><br> <a
+                            target="_blank"> Ayush Verma </a><br><br>  <br><br> <a
                             href="https://www.linkedin.com/in/shreyas-raorane-85aa9116a" target="_blank">Shreyas
                             Raorane</a></h3>
                 </div>
@@ -213,7 +364,7 @@
                 </div>
             </div>
         </div>
-    </div>
+    </div> -->
     <!--/ contact_rsvp -->
 
     <!-- footer start -->
